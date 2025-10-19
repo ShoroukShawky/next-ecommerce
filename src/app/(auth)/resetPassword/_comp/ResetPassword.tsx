@@ -33,8 +33,8 @@ export default function Login() {
       const { data } = await axios.put("https://ecommerce.routemisr.com/api/v1/auth/resetPassword", value)
       console.log(data)
       router.push('/login')
-    } catch (error: any) {
-      console.log(error.response?.data?.message)
+    } catch (error) {
+            setIsLoading(false)
     } finally {
       setIsLoading(false)
     }
