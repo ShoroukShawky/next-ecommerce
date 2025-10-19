@@ -37,8 +37,8 @@ export default function Register() {
         form.reset()
         router.push('/login')
       }
-    } catch (error: any) {
-      console.log(error.response?.data?.message)
+    } catch (error) {
+     
       setIsLoading(false)
     }
   }

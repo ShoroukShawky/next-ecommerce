@@ -30,7 +30,7 @@ export interface ProductIterface {
   updatedAt: string
   id: string
   priceAfterDiscount?: number
-  availableColors?: any[]
+ 
 }
 
 export interface Subcategory {

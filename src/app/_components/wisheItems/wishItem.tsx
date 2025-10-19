@@ -7,7 +7,7 @@ import React, { useState } from "react";
 import toast from "react-hot-toast";
 import MyButton from "../myButton";
 
-export default function WishListItem({ product,setAllProducts }: { product: WishListType,setAllProducts:any }) {
+export default function WishListItem({ product, setAllProducts }: { product: WishListType, setAllProducts: React.Dispatch<React.SetStateAction<WishListType[]>> }) {
   const [isLoading, setIsLoading] = useState(false);
 
   async function handleDelete() {

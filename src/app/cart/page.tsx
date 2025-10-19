@@ -75,8 +75,6 @@ export default function Cart() {
               <CartItem
                 key={product.product._id}
                 product={product}
-      
-                setTotalPrice={ context?.setTotalPrice}
               />
             ))}
           </div>

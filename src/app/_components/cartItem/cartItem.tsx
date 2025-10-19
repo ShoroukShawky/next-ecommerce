@@ -9,10 +9,10 @@ import toast from "react-hot-toast";
 
 export default function CartItem({
   product,
-  setTotalPrice,
+ 
 }: {
   product: CartProductType;
-  setTotalPrice: any;
+  
 }) {
   const [isLoading, setIsloading] = useState(false);
  const context = useContext(CartContext)

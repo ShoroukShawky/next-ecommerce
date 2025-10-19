@@ -48,8 +48,8 @@ export default function Login() {
         }
         
       }
-      catch (error:any){
-       console.log(error.response.data.message)  
+      catch (error){
+      
        setIsLoading(false);
       }
   }

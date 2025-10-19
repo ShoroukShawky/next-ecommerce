@@ -7,6 +7,7 @@ import {
   removeFromWishList,
   getTheWishList,
 } from "@/apis/wisheApi";
+import { WishListType } from "@/interfaces/wishListInterface";
 
 export default function WishButton({ id }: { id: string }) {
   const [isLoading, setIsLoading] = useState(false);
@@ -17,7 +18,7 @@ export default function WishButton({ id }: { id: string }) {
     async function checkWishList() {
       try {
         const data = await getTheWishList();
-        const exists = data.data.some((item: any) => item._id === id);
+        const exists = data.data.some((item: WishListType) => item._id === id);
         setIsWished(exists);
       } catch (err) {
         console.log(err);
